@@ -1,18 +1,12 @@
 "use strict";
-
 let tableTwoFavorFruitList = ["Mango", "Dragonfruit", "Strawberry", "Blueberry"];
 
+const fruitListContent = document.querySelector(".fruitList");
+let content = "";
 
-tableTwoFavorFruitList.forEach( fruit => {
-    // console.log(`${fruit}`);
-    let content = "";
+tableTwoFavorFruitList.forEach(fruit => {
     content += `
             <li>${fruit}</li>
-
-    `;
-    document.querySelector(".fruitList").innerHTML += content;
+    `     
 });
-
-
-
-
+fruitListContent.innerHTML += content;
